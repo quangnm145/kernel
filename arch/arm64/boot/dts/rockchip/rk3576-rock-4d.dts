@@ -130,6 +130,11 @@
 		pinctrl-0 = <&usb_wifi_power_en>;
 	};
 
+	wireless-bluetooth {
+		compatible = "bluetooth-platdata";
+		status = "disabled";
+	};
+
 	wifi_chip_en: wifi-chip-en {
 		compatible = "regulator-fixed";
 		regulator-name = "wifi_chip_en";
